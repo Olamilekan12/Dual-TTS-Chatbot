@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+    background-color: rgb(36,36,36);
+}
+body.light-mode{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* #swap{
+    position: fixed;
+    cursor: pointer;
+} */
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: grey; */
+    /* background: linear-gradient(90deg,#010758, #490d61); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     color: #fff;
+    
+}
+
+.main h1{
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    
+
+}
+span{
+    color: #007BFF;
+}
+
+.first{
+    width: 600px;
+    height: 250px;
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+
+}
+.row{
+    width: 600px;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+button img{
+    width: 24px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background-color: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+}
+
+.swap-class{
+    margin-block-end: 0;
+    margin-inline-start: 1100px;
+}
+
+
+
+/*Speech To Text */
+.speech_to_text{
+    width: 600px;
+    text-align: center;
+    margin:auto;
+    
+}
+#convert_text{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
