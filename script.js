@@ -23,7 +23,7 @@ document.querySelector("button").addEventListener("click", ()=>{
 
 
 
-
+//code to switch themes between dark mode and light mode
 
 document.getElementById("swap").addEventListener('click', function(){
     document.body.classList.toggle('light-mode');
