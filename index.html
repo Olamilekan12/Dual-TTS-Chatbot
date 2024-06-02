@@ -1,39 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dual TTS & STT Chatbot </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dual TTS & STT Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
-        <div class="main">
-            <h1>Text To Speech <span>Converter</span></h1>
-            <textarea class="first" placeholder="Enter text to convert to speech"></textarea>
-            <div class="row">
-                <select>
-                    
-                </select>
-                <button><img src="/icon.png" alt="play"/>Speak</button>
-            </div>
+  <body>
+    <nav>
+      <ul class="topnav" id="dropDownClick">
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#features"> features</a></li>
+        <li><a href="#FAQ"> FAQ</a></li>
+        <li class="topnav-right"><a href="#contactus"> Contact us</a></li>
+        <li class="topnav-right"><a href="#credit"> credit</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
 
+    <div class="container1" id="section-1-gradient">
+      <div class="row1">
+        <div class="col-6">
+          <div class="leftSide-col">
+            <h1 class="large">Dual TTS Chatbot</h1>
+            <h1 class="large">Making web content accessible for all</h1>
+          </div>
         </div>
 
-        <hr>
-        <div class="swap-class">
-        <button id="swap"> Switch Theme </button>
+        <div class="col-6">
+          <div class="rightSide-col">
+            <div class="videoContainer">
+              
+               <iframe width="605px" min-width="325px" height="560" src="https://www.youtube.com/embed/B_u92nhXOCo" title=
+               "The significance of Dual TTS chatbot web application in web content accessibility." 
+               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+               picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+               </iframe>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="center">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> -->
+
+    <div class="main">
+      <h1>Text To Speech <span>Converter</span></h1>
+      <textarea
+        class="first"
+        placeholder="Enter text to convert to speech"
+      ></textarea>
+      <div class="row2">
+        <select></select>
+        <button><img src="/icon.png" alt="play" />Speak</button>
+      </div>
+    </div>
+
+    <hr />
+    <div class="swap-class">
+      <button id="swap">Switch Theme</button>
     </div>
     hhhhhh
-        <!-- <div class="speech_to_text">
+    <!-- <div class="speech_to_text">
             <h1>Speech To Text <span>Converter</span></h1>
             <textarea id="convert_text" ></textarea>
             
                 <button id="click_to_convert"><img src="/icon.png" alt="play"/>Speech To Text</button>
             </div> -->
 
-  
-
-
-<script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>

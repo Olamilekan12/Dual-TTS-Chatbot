@@ -1,53 +1,56 @@
+//dropdown menu responsive code
+function dropDownMenu() {
+  var x = document.getElementById("dropDownClick");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    // change topnav to topnav-responsive##
+  } else {
+    x.className = "topnav";
+  }
+}
+
 let speech = new SpeechSynthesisUtterance();
 
-let voices=[];
+let voices = [];
 
-let voiceSelect=document.querySelector("select");
+let voiceSelect = document.querySelector("select");
 
 window.speechSynthesis.onvoiceschanged = () => {
-    voices=window.speechSynthesis.getVoices();
-    speech.voice = voices[0];
+  voices = window.speechSynthesis.getVoices();
+  speech.voice = voices[0];
 
-    voices.forEach((voice, i) => (voiceSelect.options[i]) = new Option(voice.name, i))
+  voices.forEach(
+    (voice, i) => (voiceSelect.options[i] = new Option(voice.name, i))
+  );
 };
 
-voiceSelect.addEventListener("change", () =>{
-    speech.voice = voices[voiceSelect.value];
+voiceSelect.addEventListener("change", () => {
+  speech.voice = voices[voiceSelect.value];
 });
 
-
-document.querySelector("button").addEventListener("click", ()=>{
-    speech.text= document.querySelector("textarea").value;
-    window.speechSynthesis.speak(speech);
-})
-
-
+document.querySelector("button").addEventListener("click", () => {
+  speech.text = document.querySelector("textarea").value;
+  window.speechSynthesis.speak(speech);
+});
 
 //code to switch themes between dark mode and light mode
 
-document.getElementById("swap").addEventListener('click', function(){
-    document.body.classList.toggle('light-mode');
+document.getElementById("swap").addEventListener("click", function () {
+  document.body.classList.toggle("light-mode");
 
-    if(document.body.classList.contains('light-mode')){
-        localStorage.setItem('swap', 'light');
-    } else{
-        localStorage.setItem('swap', 'dark');
-    }
+  if (document.body.classList.contains("light-mode")) {
+    localStorage.setItem("swap", "light");
+  } else {
+    localStorage.setItem("swap", "dark");
+  }
 });
 
-
 //load the saved theme preference on page load
-window.onload=function(){
-    if(localStorage.getItem('swap')=== 'light'){
-        document.body.classList.add('light-mode');
-    }
-}
-
-
-
-
-
-
+window.onload = function () {
+  if (localStorage.getItem("swap") === "light") {
+    document.body.classList.add("light-mode");
+  }
+};
 
 // click_to_convert.addEventListener('click', function(){
 //     var speech = true;
