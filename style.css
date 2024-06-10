@@ -1,9 +1,16 @@
+html, body{
+  margin: 0;
+  overflow-x: hidden;
+  
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", "sans-serif";
   box-sizing: border-box;
   line-height: 1;
+  /* background-color: black; */
+ 
 }
 /* body.light-mode{
     background-color: white;
@@ -60,21 +67,25 @@ ul.topnav li.dropdownIcon {
 #section-1-gradient {
   background-image: url(/background.jpg);
   /* background: linear-gradient(#076DFF, #65a5ff); */
+  overflow: hidden;
 }
 
 .container1 {
   width: 100%;
-  margin: auto;
+  margin: 0;
   padding-top: 4%;
   padding-bottom: 4%;
+  overflow: hidden;
 }
 
-.container2 {
+/* .container2 {
   width: 100%;
   margin: auto;
   padding-top: 4%;
   padding-bottom: 4%;
-}
+  overflow: hidden;
+  width: min-content;
+} */
 
 .row1 {
   width: 100%;
@@ -135,10 +146,14 @@ ul.topnav li.dropdownIcon {
 
 div.leftSide-col {
   margin-left: 30%;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 div.rightSide-col{
         margin-right: 30%;
+        margin: 0 auto;
+        width: fit-content;
 }
 p {
   text-align: justify;
@@ -148,41 +163,62 @@ p {
     position: fixed;
     cursor: pointer;
 } */
-
+.wrapper{
+  background-color: black;
+}
 .main {
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(36, 36, 36);
+  /* background-size: cover; */
+  /* background-color: rgb(36, 36, 36); */
   /* background: linear-gradient(90deg,#010758, #490d61); */
-  display: flex;
-  flex-direction: column;
+   display: flex; 
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   color: #fff;
-  margin: 0;
+  /* margin-block: 50px; */
   overflow: hidden;
-  padding: 0;
+  padding: 16px;
   box-sizing: border-box;
-  line-height: 1;
+  /* line-height: 1; */
   border: #666;
   border-radius: 20px;
+  margin-block-end: 16px;
+  /* position: relative; */
+  
 }
 
 .main h1 {
+  /* position: relative; */
   font-size: 3.2em;
   line-height: 1.1;
   font-weight: 500;
-  margin-top: -50px;
   margin-bottom: 50px;
+  /* background-color: red; */
+  border: 3px solid black;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  
+  
+ 
 }
+.negative-margin{
+  /* margin-top: -200px; */
+}
+
+
 span {
   color: #007bff;
 }
 
 .first {
-  width: 600px;
+ width: 50%;
+ max-width: 100vw;
   height: 250px;
   background-color: #fff;
   color: black;
@@ -193,7 +229,12 @@ span {
   border-radius: 10px;
   resize: none;
   margin-bottom: 30px;
+  
   display: flex;
+  flex: 1 1 100%;
+    /* margin: 0 auto; */
+  /* justify-content: center; */
+
 }
 
 textarea::placeholder {
