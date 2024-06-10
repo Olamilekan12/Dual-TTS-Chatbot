@@ -265,6 +265,7 @@ button {
   cursor: pointer;
   display: flex;
   align-items: center;
+
 }
 button img {
   width: 24px;
@@ -279,6 +280,7 @@ select {
   outline: 0;
   border: 0;
   border-radius: 35px;
+  
 }
 
 .swap-class {
@@ -347,6 +349,31 @@ select {
 iframe.videoContainer{
     width: 100%; 
 }
+
+
+/* .first{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;} */
+
+button{
+  margin-left: 30px;
+}
+
+select{
+  max-width: 30%;
+  height: 50px;
+  margin-left: 120px;
+}
+
+.first{
+  max-height: 250px;
+}
+h1.negative-margin{
+  display: inline;
+}
+
 }
 
 /* @media screen and (max-width: 680px) {
