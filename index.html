@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <!-- This is a dual Text To Speech and Speech To Text Web Application developed with HTML, CSS, and Vanilla Javascript.
+  It's features includes the ability to listen to speech utterances, and display its textual equivalence and also textual contents can be written to get an audio presentation.
+This helps in enhancing accessibility for modern day websites, helps in knowing the correct pronunciation of words in English Language, and also can be useful for note taking. -->
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dual TTS & STT Chatbot</title>
@@ -7,13 +10,13 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <ul class="topnav" id="dropDownClick">
         <li><a href="#home"> Home</a></li>
         <li><a href="/features.html"> features</a></li>
         <li><a href="#FAQ"> FAQ</a></li>
-        <li class="topnav-right"><a href="#contactus"> Contact us</a></li>
-        <li class="topnav-right"><a href="#credit"> credit</a></li>
+        <!-- <li class="topnav-right"><a href="#contactus"> Contact us</a></li> -->
+        <li class="topnav-right"><a href="./credit.html"> credit</a></li>
         <li class="dropdownIcon">
           <a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a>
         </li>
@@ -57,31 +60,45 @@
     </div> -->
 <div class="wrapper">
     <div class="main">
+      <button>TTS</button>
+      <!-- <div class="current_content" id="current_content"> -->
       <h1 class="negative-margin">Text To Speech
         <span>Converter</span></h1>
       <textarea
-        class="first"
+        class="first" id="text"
         placeholder="Enter text to convert to speech"
       ></textarea>
       <div class="row2">
         <select></select>
-        <button><img src="/icon.png" alt="play" />Speak</button>
+        <button id="play-button" style="margin-left: 17px ;">Convert To Speech</button>
+      
+
+      
+      </div>
+      </div>
+    <div class="main">
+      <button>STT</button>
+      <!-- <div class="current_content" id="current_content"> -->
+      <h1 class="negative-margin">Speech To Text
+        <span>Converter</span></h1>
+      <textarea
+        class="first" id="convert_text"
+        placeholder="Click the button below and start speaking"
+      ></textarea>
+      <div class="row2">
+      
+        <button id="click_to_convert" style="display:flex; align-self: center; justify-content: center; margin: 0 auto;">Start Listening</button>
+      
+
+      
+      </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
-    <hr />
-    <!-- <div class="swap-class">
-      <button id="swap">Switch Theme</button>
-    </div> -->
- 
-    <!-- <div class="speech_to_text">
-            <h1>Speech To Text <span>Converter</span></h1>
-            <textarea id="convert_text" ></textarea>
-            
-                <button id="click_to_convert"><img src="/icon.png" alt="play"/>Speech To Text</button>
-            </div> -->
-
+    <footer>
+      <h5>ND 2 Final Year Project, Federal School Of Statistics, Ibadan. &copy;2024.</h5>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

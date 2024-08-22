@@ -1,0 +1,20 @@
+dl {
+    margin-bottom: 2em;
+    }
+    
+    dt {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    }
+    
+    dd {
+    margin-bottom: 1em;
+    }
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    }
