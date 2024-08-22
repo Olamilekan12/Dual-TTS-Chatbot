@@ -12,6 +12,10 @@
     box-shadow: 10 10 10px, rgba(218, 36, 36, 0.1);
     width: 200px;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     }
     
     .avatar img {
